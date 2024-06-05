@@ -1,0 +1,23 @@
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f00; /* Цвет конфетти */
+    animation: confetti-fall linear infinite;
+}
+
+/* Страница на весь экран */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
